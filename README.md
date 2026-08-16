@@ -1,4 +1,4 @@
-# NIS2 Applicability Triage by Country v1.1
+# NIS2 Applicability Triage by Country v1.2
 
 Free, bilingual, privacy-first decision-support tool for a qualified preliminary NIS2 scope screen by EU Member State, sector, size and special scope route.
 
@@ -16,6 +16,16 @@ Free, bilingual, privacy-first decision-support tool for a qualified preliminary
 - [Ejemplo sanitario en español](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=es&scenario=health)
 
 Each sample loads a fictional worked example and generates its qualified decision record automatically. Do not use sample data as compliance evidence.
+
+## EU baseline and national modules
+
+The tool separates the common EU Directive assessment from national implementation:
+
+- **Spain — Partial:** official DSN, INCIBE-CERT and BOE sources reviewed; final transposition, registration and authority allocation must still be confirmed.
+- **Germany, France, Italy, Netherlands, Ireland and Portugal — Planned:** authority directory available; national decision logic is not yet verified.
+- **Other Member States — Pending:** EU baseline assessment only.
+
+The interface never labels a pending national module as a completed country assessment.
 
 ## Capabilities
 
