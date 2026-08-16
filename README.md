@@ -1,16 +1,21 @@
-# NIS2 Applicability Triage by Country
+# NIS2 Applicability Triage by Country v1.1
 
 Free, bilingual, privacy-first decision-support tool for a qualified preliminary NIS2 scope screen by EU Member State, sector, size and special scope route.
 
 ## Capabilities
 
 - All 27 EU Member States
+- Country authority directory with review date and explicit verification status
 - Annex I / Annex II sector screen
-- Size threshold and Article 2(2) special routes
+- Evidence-based size calculation (employees, turnover, balance and group aggregation flag)
+- Exact entity/service type and Article 2(2) special routes
 - Essential / important preliminary category
-- Cross-border and national-designation uncertainty
-- DemoCo worked example
-- JSON, Markdown and print/PDF decision record
+- Main-establishment, cross-border and special digital-provider jurisdiction screen
+- DORA, CER, exclusion and national-designation review
+- Owner, reviewer, approver, next review and approval state
+- Four professional worked scenarios
+- JSON, Markdown, CSV and print/PDF decision record
+- 27 generated country SEO landing pages and sitemap
 - English and Spanish URLs (`?lang=en`, `?lang=es`)
 - Local browser processing; no analytics or account
 
