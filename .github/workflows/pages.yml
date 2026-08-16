@@ -23,6 +23,8 @@ jobs:
           node-version: 22
       - run: npm test
       - run: npm run check
+      - name: Generate 27 country SEO pages and sitemap
+        run: node scripts/generate-seo.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
