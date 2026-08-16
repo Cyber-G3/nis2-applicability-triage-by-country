@@ -1,5 +1,5 @@
 import{profile}from'./countries.js';
-export const VERSION='1.1.0';
+export const VERSION='1.2.0';
 export const ANNEX={energy:'I',transport:'I',banking:'I',financial:'I',health:'I','drinking-water':'I','waste-water':'I','digital-infrastructure':'I','ict-management':'I','public-administration':'I',space:'I',postal:'II','waste-management':'II',chemicals:'II',food:'II',manufacturing:'II','digital-providers':'II',research:'II'};
 const ALWAYS=['electronic-communications','trust-services','tld-dns','sole-provider','public-safety','systemic-risk','national-designation','cer-critical'];
 export function sizeBand({employees=0,turnover=0,balance=0,linked=false,sizeOverride=''}){if(sizeOverride)return{band:sizeOverride,source:'override'};const e=+employees,t=+turnover,b=+balance;if(!e&&!t&&!b)return{band:'unknown',source:'missing'};let band=e>=250||t>50||b>43?'large':e>=50||t>10||b>10?'medium':e>=10||t>2||b>2?'small':'micro';return{band,source:'calculated',linkedReview:!!linked}}
