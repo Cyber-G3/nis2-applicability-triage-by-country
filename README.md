@@ -2,6 +2,21 @@
 
 Free, bilingual, privacy-first decision-support tool for a qualified preliminary NIS2 scope screen by EU Member State, sector, size and special scope route.
 
+## Live tool
+
+- [Open in English](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=en)
+- [Abrir en español](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=es)
+
+## Professional samples
+
+- [DemoCo Health Cloud — Spain](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=en&scenario=health)
+- [Managed Service Provider — Germany](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=en&scenario=msp)
+- [Small DNS Provider — France](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=en&scenario=dns)
+- [Financial Entity / DORA — Ireland](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=en&scenario=dora)
+- [Ejemplo sanitario en español](https://cyber-g3.github.io/nis2-applicability-triage-by-country/?lang=es&scenario=health)
+
+Each sample loads a fictional worked example and generates its qualified decision record automatically. Do not use sample data as compliance evidence.
+
 ## Capabilities
 
 - All 27 EU Member States
