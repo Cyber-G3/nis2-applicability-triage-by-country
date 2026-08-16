@@ -1,1 +1,1 @@
-import'./v11.js';/* Legacy v1.0 replaced by the v1.1 professional workbench. */
+import'./v11.js';import'./v12.js';/* EU baseline plus versioned national modules. */
