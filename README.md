@@ -56,3 +56,7 @@ npm run check
 ```
 
 Built by [SpectraSec](https://www.spectrasec.eu/). Apache-2.0.
+
+## Portfolio case
+
+For the engineering and business case behind this project, see [docs/PORTFOLIO.md](docs/PORTFOLIO.md).
