@@ -255,3 +255,18 @@ export const NIS2_LEGAL_MILESTONES={
  NL:{kind:'commission-referral',date:'2026-07-08',detail:'Commission referred the Netherlands to the CJEU for failure to notify full transposition.',source:'https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules'}
 };
 export function nis2LegalMilestone(code){return Object.hasOwn(NIS2_LEGAL_MILESTONES,code)?NIS2_LEGAL_MILESTONES[code]:null}
+
+// Primary EU legislative register: lists measures notified by each Member State.
+// A listed measure does NOT itself prove complete or compliant transposition.
+export const NIS2_EURLEX_NATIONAL_MEASURES='https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX%3A32022L2555';
+export const NIS2_COMMISSION_COUNTRY_PAGE='https://digital-strategy.ec.europa.eu/en/policies/nis2-directive-';
+export function nis2NationalLegalSources(code){
+ const x=nis2CountryReference(code);
+ if(!x)return null;
+ return {eurLex:NIS2_EURLEX_NATIONAL_MEASURES,commissionTransposition:x.transpositionSource,referenceStatus:'national-measures-to-verify',notice:'Notified measures may be incomplete. Verify applicable national law and effective dates.'};
+}
+export const NIS2_VERIFIED_LEGAL_REFERENCES={
+ BE:{law:'Loi du 26 avril 2024 établissant un cadre pour la cybersécurité des réseaux et des systèmes d’information d’intérêt général pour la sécurité publique (loi NIS2)',implementingMeasure:'Arrêté royal du 9 juin 2024',source:NIS2_EURLEX_NATIONAL_MEASURES,verification:'EU-notified-measure-reference',note:'Review current consolidated law and sector-specific requirements before making legal conclusions.'},
+ BG:{law:'Закон за изменение и допълнение на Закона за киберсигурност',published:'2026-02-13',source:NIS2_EURLEX_NATIONAL_MEASURES,verification:'EU-notified-measure-reference',note:'Review official Bulgarian text and current applicability before making legal conclusions.'}
+};
+export function nis2VerifiedLegalReference(code){return Object.hasOwn(NIS2_VERIFIED_LEGAL_REFERENCES,code)?NIS2_VERIFIED_LEGAL_REFERENCES[code]:null}
