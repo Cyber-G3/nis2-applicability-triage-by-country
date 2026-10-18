@@ -246,3 +246,12 @@ export const NIS2_COUNTRY_REFERENCES={
   }
 };
 export function nis2CountryReference(code){return Object.hasOwn(NIS2_COUNTRY_REFERENCES,code)?NIS2_COUNTRY_REFERENCES[code]:null}
+
+// Time-stamped primary-source legal milestones; never extrapolate to other countries.
+export const NIS2_LEGAL_MILESTONES={
+ ES:{kind:'commission-referral',date:'2026-07-08',detail:'Commission referred Spain to the CJEU for failure to notify full transposition.',source:'https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules'},
+ FR:{kind:'commission-referral',date:'2026-07-08',detail:'Commission referred France to the CJEU for failure to notify full transposition.',source:'https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules'},
+ IE:{kind:'commission-referral',date:'2026-07-08',detail:'Commission referred Ireland to the CJEU for failure to notify full transposition.',source:'https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules'},
+ NL:{kind:'commission-referral',date:'2026-07-08',detail:'Commission referred the Netherlands to the CJEU for failure to notify full transposition.',source:'https://digital-strategy.ec.europa.eu/en/news/commission-refers-ireland-spain-france-and-netherlands-court-justice-failing-transpose-rules'}
+};
+export function nis2LegalMilestone(code){return Object.hasOwn(NIS2_LEGAL_MILESTONES,code)?NIS2_LEGAL_MILESTONES[code]:null}
